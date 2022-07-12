@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background-image:url('https://images.unsplash.com/photo-1530554997056-2f35ff15599d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=994&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.4 ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App.warm{
+    background-image:url('https://images.unsplash.com/photo-1566114912475-c04353a8eab1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.4 ease-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+    padding: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.searchDiv{
+    width: 100%;
+    margin: 0 0 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar{
+    display: block;
+    width: 100%;
+    padding: 15px;
+
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 6px 6px 6px 6px;
+    margin-top: 25px;
+    box-shadow: 4px 2px 2px rgba(128, 128, 128, 0.24);
+}
+
+.location{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.date{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+    padding-top: 10px;
+}
+
+.temp{
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    max-width: 15rem;
+    height: 10rem;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 15px 25px;
+    align-items: center;
+
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    text-shadow: 3px 6px rgba(50, 50, 70, .5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
+}
+
+.weather{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 300;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    text-align: center;
+    padding-top: 20px;
 }
